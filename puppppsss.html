@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Puppy Mood</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align:center;
+            background:#fff8dc;
+            transition:0.5s;
+            margin:0;
+            padding:30px;
+        }
+
+        h1{
+            color:#ff6600;
+        }
+
+        .container{
+            display:flex;
+            justify-content:center;
+            gap:80px;
+            margin-top:40px;
+        }
+
+        .card{
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:scale(1.1);
+        }
+
+        .emoji{
+            font-size:120px;
+        }
+
+        button{
+            margin-top:30px;
+            padding:10px 25px;
+            font-size:18px;
+            border:none;
+            background:orange;
+            color:white;
+            border-radius:10px;
+            cursor:pointer;
+        }
+
+        #result{
+            margin-top:30px;
+            font-size:22px;
+            line-height:1.8;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<h1>🐶 Puppy Mood Checker 🐶</h1>
+
+<p>Click on the puppy that matches Puppy's mood!</p>
+
+<div class="container">
+
+<div class="card" onclick="happyPuppy()">
+<div class="emoji">🐶😊</div>
+<h2>Happy Puppy</h2>
+</div>
+
+<div class="card" onclick="sadPuppy()">
+<div class="emoji">🐶😢</div>
+<h2>Sad Puppy</h2>
+</div>
+
+</div>
+
+<div id="result"></div>
+
+<script>
+
+function happyPuppy(){
+
+document.body.style.background="#FFF9C4";
+
+document.getElementById("result").innerHTML=
+`
+<h1>🐶🌸 HAPPY PUPPY 🌸🐶</h1>
+
+<div style="font-size:90px;">
+🐶 😄 🎉 💖 🦴 🌈 🥰 🐾
+</div>
+
+<p>
+<b>Puppy chellam happy ah irukana 💖</b><br><br>
+
+Appo Paapa vum romba cuteaa smile pannitu iruka 😊<br>
+ippo puppy cute ah Vaal wag pannitu azhaga clg ponum! 🐕<br>
+Ellartayum sirichi pesitu jolly ah irukanum 😘🐶<br>
+cute ah olunga saapdanum 🍖<br>
+paapa ku apppo appo msg pannanum (telling sadly) 🎾<br>
+Paapa kooda ah next time cuddle pannanum 🤗<br>
+Happy happy  🌈🐾
+</p>
+
+<h2>🥰 Conclusion 🥰</h2>
+
+<p>
+Happy puppy-na paapa yum happy! ❤️<br>
+ithula ethulam puppy olunga pannuveenga?. 🐶💖
+</p>
+`;
+
+}
+
+function sadPuppy(){
+
+document.body.style.background="#D6EAF8";
+
+document.getElementById("result").innerHTML=
+`
+<h1>😢 SAD PUPPY 😢</h1>
+
+<div style="font-size:90px;">
+🐶 😢 💔 🌧️ 🥺 🐾
+</div>
+
+<p>
+<b>Puppy innum sogama iruntha paapa puppy ku enna pannanum?</b><br><br>
+
+❤️ Puppy ah  hug pannunga 🤗<br>
+❤️ Head gently pat pannunga 🥹<br>
+❤️ Favorite treat kudunga 🍖<br>
+❤️ Ball vechu vilayadunga 🎾<br>
+❤️ Walk ku koopdunga 🚶🐶<br>
+❤️ paasama pesunga konjunga💖<br>
+❤️ Puppy-a thaniya vidaatheenga 🥺
+</p>
+
+<h2>💖 Conclusion 💖</h2>
+
+<p>
+enna panna puppy happy aaguvan? pick panni sollunga 🥰🐶
+</p>
+`;
+
+}
+
+</script>
+
+</body>
+</html>
